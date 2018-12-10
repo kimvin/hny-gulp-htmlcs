@@ -1,0 +1,36 @@
+{
+    "name": "hny-gulp-htmlcs",
+    "version": "2.1.3",
+    "description": "Gulp plugin for running htmlcs results through various reporters.",
+    "main": "dist/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "transpile": "babel src --out-dir dist",
+        "prepublish": "npm run transpile"
+    },
+    "author": "Jin Yongcheng <jinyc007@qq.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kimvin/hny-gulp-htmlcs.git"
+    },
+    "dependencies": {
+        "@babel/polyfill": "^7.0.0",
+        "chalk": "^2.4.1",
+        "deep-extend": "^0.6.0",
+        "fancy-log": "^1.3.3",
+        "htmlcs": "^0.4.1",
+        "mkdirp": "^0.5.1",
+        "plugin-error": "^1.0.1",
+        "promise": "^8.0.2",
+        "strip-ansi-stream": "^1.0.0",
+        "stylelint": "^9.9.0",
+        "through2": "^3.0.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.1.5",
+        "@babel/core": "^7.1.6",
+        "@babel/preset-env": "^7.1.6",
+        "@babel/preset-es2015": "^7.0.0-beta.53"
+    }
+}
